@@ -1,6 +1,6 @@
 % --- SISTEMAS DE COMUNICACOES 1 ---
 % AULA 2: Revisao de sinais e sistemas
-% DIA 15/02/2018
+% DIA 19/02/2018
 % Jessica de Souza
 
 % EX2 - plotando tres cossenos e somando na frequencia 
