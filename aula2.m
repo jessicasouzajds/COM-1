@@ -30,7 +30,7 @@ ylabel('Amplitude');
 title(['Funcao cosseno: F = ',num2str(f3), ' Hz e N = ',num2str(N), ' amostras.']);
 
 %%
-% Fazendo a fft do cosseno
+% Fazendo a fft do cosseno 
 
 % OBS: a funcao fft() usa como variacao de freq. de 0 ate fa.
 f_fft = [0:1/(N*(1/f3)):fa-1]; % Vetor de frequencia
