@@ -1,6 +1,6 @@
 % --- SISTEMAS DE COMUNICACOES 1 ---
 % AULA 1: Revisao de sinais e sistemas
-% DIA 15/02/2018
+% DIA 15/02/2018 
 % Jessica de Souza
 
 % EX1 - plotando uma onda cosseno 
