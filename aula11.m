@@ -1,5 +1,5 @@
 % --- SISTEMAS DE COMUNICACAO 1 ---
-% AULA 11: Convers„o analÛgico digital
+% AULA 11: Convers√£o anal√≥gico-digital
 % DIA 20/03/2018
 % Jessica de Souza
 
@@ -41,7 +41,7 @@ info_bin_tx = reshape(info_bin,1, linha*coluna); %reshape(dado,num. linha, num. 
 info_bin_rx = reshape(info_bin_tx, linha, coluna); %vetorizando para o formato original
 info_bin_rx = info_bin_rx';                        %invertendo o vetor
 info_rx_dec = bi2de(info_bin_rx);                  %transformando para decimal
-info_rx1 = info_rx_dec*passo_quant;                %removendo os nÌveis
+info_rx1 = info_rx_dec*passo_quant;                %removendo os n√≠veis
 info_rx = info_rx1 -1;                             %removendo o offset
 
 
@@ -59,19 +59,19 @@ espectro_rxf2 = fftshift(espectro_rx2);
 %%
 figure,
 subplot(311),plot(t, info_tx);
-title('InformaÁ„o original');
+title('Informa√ß√£o original');
 subplot(312),plot(t,info_quant);
-title('InformaÁ„o Quantizada para 8 niveis');
+title('Informa√ß√£o Quantizada para 8 niveis');
 subplot(313),plot(t,info_quant_round);
-title('InformaÁ„o Arrendondada para 8 niveis');
+title('Informa√ß√£o Arrendondada para 8 niveis');
 
 figure,
 subplot(311),plot(info_rx_dec);
-title('InformaÁ„o Recebida com Niveis');
+title('Informa√ß√£o Recebida com Niveis');
 subplot(312), plot(t,info_rx);
-title('InformaÁ„o Recuperada');
+title('Informa√ß√£o Recuperada');
 subplot(313), plot(t,info_rx_filt);
-title('InformaÁ„o Recuperada com Filtro Passa Baixa');
+title('Informa√ß√£o Recuperada com Filtro Passa Baixa');
 
 figure,
 subplot(211), stem(f,abs(espectro_rxf));
