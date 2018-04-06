@@ -34,4 +34,4 @@ title('Sinal Superamostrado');
 ylim([-3.5 3.5]);
 subplot(313),plot(sinal_filter);
 title('Sinal Superamostrado e Filtrado');
-ylim([-3.5 3.5]);
+ylim([-3.5 3.5]); 
