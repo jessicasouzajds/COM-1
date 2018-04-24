@@ -1,5 +1,5 @@
 % --- SISTEMAS DE COMUNICACAO 1 ---
-% AULA 17: DetecÁ„o de sinais bin·rios em um canal AWGN
+% AULA 17: Detec√ß√£o de sinais bin√°rios em um canal AWGN
 % DIA 05/04/2018
 % Jessica de Souza
 
@@ -13,18 +13,18 @@ SNR_max=10;  % Razao Sinal-Ruido
 limiar = 0;
 Rb = 10000;
 
-% Gerando a informaÁ„o
+% Gerando a informa√ß√£o
 info= randint(1,Rb); 
-info_nrz = (info * 2) - 1; % Gerando os nÌveis do sinal;
+info_nrz = (info * 2) - 1; % Gerando os n√≠veis do sinal;
 
-% Criando o filtro que ir· formatar a informaÁ„o
+% Criando o filtro que ir√° formatar a informa√ß√£o
 filtro_nrz = ones(1,N);
-info_up = upsample(info_nrz,N);  % Superamostrando a informaÁ„o em Nsamp
+info_up = upsample(info_nrz,N);  % Superamostrando a informa√ß√£o em Nsamp
 
 % Filtrando o sinal
 sinal_tx=filter(filtro_nrz,1,info_up);
 
-% VerificaÁ„o de erro em funÁ„o da SNR
+% Verifica√ß√£o de erro em fun√ß√£o da SNR
 for SNR = 0 : SNR_max
     sinal_rx = awgn(sinal_tx,SNR); % Adiciona ruido branco gaussiano no sinal com dada SNR
     Z_T = sinal_rx(N/2:N:end); % Amostra o sinal para cada pulso iniciar no centro de cada bit
@@ -33,6 +33,6 @@ for SNR = 0 : SNR_max
 end
 
 % Plotando os resultados
-figuire, semilogy([0:SNR_max],Pb);
+figure, semilogy([0:SNR_max],Pb);
 xlabel('SNR');
-ylabel('Probabilidade de erro'); % Gr·fico para verificar a funÁ„o Q.
+ylabel('Probabilidade de erro'); % Gr√°fico para verificar a fun√ß√£o Q.
