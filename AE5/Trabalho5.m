@@ -1,4 +1,4 @@
-% --- SISTEMAS DE COMUNICA«√O 1 ---
+% --- SISTEMAS DE COMUNICA√á√ÉO 1 ---
 % Trabalho 5: Pulse Code Modulation
 % DIA 29/05/2018
 % Aluna: Jessica de Souza
@@ -7,7 +7,7 @@
 % desenvolvido em sala de aula: aula24.m
 
 [y,Fs] = audioread('captura_jessicasouza.wav');
-%extraindo as informaÁoes do audio
+%extraindo as informa√ßoes do audio
 info_audio = audioinfo('captura_jessicahahn.wav');
 t = 0:seconds(1/Fs):seconds(info_audio.Duration);
 t = t(1:end-1);
@@ -20,7 +20,7 @@ plot(t,y);
 
 
 %%
-% Resumo do que È para fazer:
+% Resumo do que √© para fazer:
 
 % fs = 44100 (placa de som)
 % apos a placa de som, vai p matlab
