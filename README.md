@@ -29,3 +29,15 @@ Este repositório contém todos os exercícios realizados em sala de aula e labo
 * Aula 18: Filtro casado em um canal AWGN.
 
 * Aula 24: Modulação PCM
+
+## Descrição dos arquivos (laboratórios avaliativos):
+
+* AE1: Revisão de Sinais e Sistemas.
+
+* AE2: Modulação AM (códigos e relatório).
+
+* AE4: Transmissão binária (códigos e relatório).
+
+* AE5: Modulação de código de pulso (códigos e relatório).
+
+* AE6: Modulação BPSK (apenas os códigos).
